@@ -1,0 +1,24 @@
+.header {
+  padding: 18px 0;
+  background-color: $header-bg;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 111px;
+
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 168px;
+  }
+}

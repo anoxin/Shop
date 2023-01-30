@@ -1,0 +1,20 @@
+// Подключение переменных
+@import 'variables';
+//  Подключение базовых настроек
+@import 'settings';
+//  Подключение блока header
+@import './blocks/header';
+//  Подключение блока main
+@import './blocks/main';
+//  Подключение блока goods
+@import './blocks/goods';
+//  Подключение блока recommendation
+@import './blocks/recommendation';
+//  Подключение блока advantage
+@import './blocks/advantage';
+//  Подключение блока contacts
+@import './blocks/contacts';
+//  Подключение footer
+@import './blocks/footer';
+//  Подключение footer
+@import 'media'

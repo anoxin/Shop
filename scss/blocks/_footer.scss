@@ -1,0 +1,25 @@
+.footer {
+  padding: 24px 0;
+  background: #222224;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__rules {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FBFBFB;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    width: 148px;
+  }
+
+}

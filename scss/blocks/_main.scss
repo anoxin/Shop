@@ -1,0 +1,43 @@
+.main {
+  background-color: $main-bg;
+
+  &__image {
+    min-height: 800px;
+    background: url(../img/main/man.png) -222px bottom no-repeat;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    width: 506px;
+    margin-top: 290px;
+    padding-left: 16px;
+    border-left: 12px solid $color-pink;
+
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+  }
+
+  &__text-color {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: $color-pink;
+    text-transform: uppercase;
+  }
+}
