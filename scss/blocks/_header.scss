@@ -1,5 +1,4 @@
 .header {
-  padding: 18px 0;
   background-color: $header-bg;
 
   &__wrapper {
@@ -20,5 +19,65 @@
     justify-content: space-between;
     align-items: center;
     width: 168px;
+  }
+
+  &__link {
+    display: block;
+    padding: 18px 0;
+  }
+
+
+  &__menu {
+    position: relative;
+
+    &_active:hover .mega-menu {
+      display: block;
+    }
+  }
+}
+
+.mega-menu {
+  position: absolute;
+  display: none;
+  width: 232px;
+  background: #ffffff;
+  padding: 37px 34px 157px;
+
+  &__title {
+    margin-bottom: 24px;
+    text-decoration: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+
+  &__block {
+    margin-bottom: 21px;
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-pink;
+  }
+
+  &__items {
+    margin-left: 21px;
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
