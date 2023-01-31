@@ -22,4 +22,27 @@
     width: 148px;
   }
 
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      background-color: $color-pink;
+
+    }
+
+    &:hover .fa {
+      color: #ffffff;
+
+    }
+  }
+
+}
+
+.fa {
+  color: black;
 }

@@ -138,9 +138,10 @@ body {
   display: none;
   width: 232px;
   background: #ffffff;
-  padding: 37px 34px 157px;
+  padding: 37px 0 157px;
 }
 .mega-menu__title {
+  padding: 0 34px;
   margin-bottom: 24px;
   text-decoration: uppercase;
   font-weight: 700;
@@ -152,18 +153,19 @@ body {
   margin-bottom: 21px;
 }
 .mega-menu__subtitle {
-  margin-bottom: 12px;
+  display: block;
+  padding: 0 34px 12px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
 }
-.mega-menu__items {
-  margin-left: 21px;
+.mega-menu__subtitle:hover {
+  text-decoration: underline;
 }
 .mega-menu__link {
   display: block;
-  padding: 5px 0;
+  padding: 5px 45px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -308,6 +310,9 @@ body {
   margin-bottom: 30px;
   background-color: #F8F8F8;
 }
+.card:hover .card__image {
+  filter: brightness(30%);
+}
 .card__image {
   height: 420px;
 }
@@ -365,6 +370,7 @@ body {
 }
 .advantage__image {
   margin-bottom: 28px;
+  height: 40px;
 }
 .advantage__title {
   margin-bottom: 16px;
@@ -472,6 +478,24 @@ body {
   display: flex;
   justify-content: space-between;
   width: 148px;
+}
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 32px;
+  height: 32px;
+}
+.footer__link:hover {
+  background-color: #F16D7F;
+}
+.footer__link:hover .fa {
+  color: #ffffff;
+}
+
+.fa {
+  color: black;
 }
 
 @media (max-width: 1200px) {

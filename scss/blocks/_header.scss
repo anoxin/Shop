@@ -41,9 +41,10 @@
   display: none;
   width: 232px;
   background: #ffffff;
-  padding: 37px 34px 157px;
+  padding: 37px 0 157px;
 
   &__title {
+    padding: 0 34px;
     margin-bottom: 24px;
     text-decoration: uppercase;
     font-weight: 700;
@@ -57,20 +58,21 @@
   }
 
   &__subtitle {
-    margin-bottom: 12px;
+    display: block;
+    padding: 0 34px 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: $color-pink;
-  }
 
-  &__items {
-    margin-left: 21px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__link {
     display: block;
-    padding: 5px 0;
+    padding: 5px 45px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
