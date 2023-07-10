@@ -2,19 +2,15 @@
 @import 'variables';
 //  Подключение базовых настроек
 @import 'settings';
-//  Подключение блока header
-@import './blocks/header';
 //  Подключение блока main
 @import './blocks/main';
-//  Подключение блока goods
-@import './blocks/goods';
-//  Подключение блока recommendation
-@import './blocks/recommendation';
-//  Подключение блока advantage
-@import './blocks/advantage';
-//  Подключение блока contacts
-@import './blocks/contacts';
-//  Подключение footer
-@import './blocks/footer';
+//  Подключение блока registration
+@import './blocks/registration';
+//  Подключение блока product
+@import './blocks/product';
+//  Подключение блока cart
+@import './blocks/cart';
+//  Подключение блока catalog
+@import './blocks/catalog';
 //  Подключение footer
 @import 'media'

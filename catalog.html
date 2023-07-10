@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/4be33e186b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
-  <title>Shop</title>
+  <title>catalog</title>
 </head>
 
 <body>
@@ -106,60 +106,93 @@
       </div>
     </div>
   </header>
-  <main class="main">
-    <div class="container main__image">
-      <div class="main__wrapper">
-        <div class="main__content">
-          <h1 class="main__title">THE BRAND</h1>
-          <p class="main__text">OF LUXERIOUS <span class="main__text-color">FASHION</span></p>
-        </div>
-      </div>
-    </div>
-  </main>
 
-  <section class="goods">
+  <section class="name-page name-page_catalog">
     <div class="container">
-      <div class="goods__wrapper">
-        <div class="goods__items">
-          <a href="./cart.html" class="goods__item">
-            <div class="goods__info">
-              <span class="goods__text">30% OFF</span>
-              <h3 class="goods__subtitle">FOR WOMEN</h3>
-            </div>
-          </a>
-          <a href="./cart.html" class="goods__item">
-            <div class="goods__info">
-              <span class="goods__text">HOT DEAL</span>
-              <h3 class="goods__subtitle">FOR MEN</h3>
-            </div>
-          </a>
-          <a href="./cart.html" class="goods__item">
-            <div class="goods__info">
-              <span class="goods__text">NEW ARRIVALS</span>
-              <h3 class="goods__subtitle">FOR KIDS</h3>
-            </div>
-          </a>
-        </div>
-        <a href="./cart.html" class="goods__item goods__item_width">
-          <div class="goods__info">
-            <span class="goods__text">LUXIROUS & TRENDY</span>
-            <h3 class="goods__subtitle">ACCESORIES</h3>
-          </div>
-        </a>
+      <div class="name-page__wrapper name-page__wrapper_catalog">
+        <h1 class="name-page__title">NEW ARRIVALS</h1>
+        <nav class="navigation">
+          <ul class="navigation__items">
+            <li class="navigation__list"><a href="./" class="navigation__link">HOME</a></li>
+            <li class="navigation__list"><a href="./product.html" class="navigation__link">MEN</a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link navigation__link_active">NEW ARRIVALS</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </section>
 
-  <section class="recommendation">
+
+  <section class="recommendation recommendation_catalog">
     <div class="container">
       <div class="recommendation__wrapper">
-        <h2 class="recommendation__title">Fetured Items</h2>
-        <p class="recommendation__text">Shop for items based on what we featured in this week</p>
+        <div class="filter">
+          <div class="filter__wrapper">
+            <div class="filter__block-menu">
+              <details class="filter__menu">
+                <summary class="filter__title"><span>filter</span></summary>
+                <details class="filter__submenu">
+                  <summary class="filter__subtitle">category</summary>
+                  <ul class="filter__items">
+                    <li><a class="filter__link" href="#">Accessories</a></li>
+                    <li><a class="filter__link" href="#">Bags</a></li>
+                    <li><a class="filter__link" href="#">Denim</a></li>
+                    <li><a class="filter__link" href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a class="filter__link" href="#">Jackets & Coats</a></li>
+                    <li><a class="filter__link" href="#">Polos</a></li>
+                    <li><a class="filter__link" href="#">Shirts</a></li>
+                    <li><a class="filter__link" href="#">Shoes</a></li>
+                    <li><a class="filter__link" href="#">Sweaters & Knits</a></li>
+                    <li><a class="filter__link" href="#">T-Shirts</a></li>
+                    <li><a class="filter__link" href="#">Tanks</a></li>
+                  </ul>
+                </details>
+                <details class="filter__submenu">
+                  <summary class="filter__subtitle">BRAND</summary>
+                </details>
+                <details class="filter__submenu">
+                  <summary class="filter__subtitle">DESIGNER</summary>
+                </details>
+              </details>
+            </div>
+            <div class="filter__info">
+              <details class="filter__item">
+                <summary class="filter__title-item">TRENDING NOW</summary>
+              </details>
+              <details class="filter__item">
+                <summary class="filter__title-item">SIZE</summary>
+                <div class="filter__item-block">
+                  <div class="filter__size">
+                    <input id="XS" type="checkbox">
+                    <label class="filter__size-name filter__item-size" for="XS">XS</label>
+                  </div>
+                  <div class="filter__size">
+                    <input id="S" type="checkbox">
+                    <label class="filter__size-name filter__item-size" for="S">S</label>
+                  </div>
+                  <div class="filter__size">
+                    <input id="M" type="checkbox">
+                    <label class="filter__size-name filter__item-size" for="M">M</label>
+                  </div>
+                  <div class="filter__size">
+                    <input id="L" type="checkbox">
+                    <label class="filter__size-name filter__item-size" for="L">L</label>
+                  </div>
+                </div>
+              </details>
+              <details class="filter__item">
+                <summary class="filter__title-item">PRICE</summary>
+              </details>
+            </div>
+          </div>
+        </div>
         <div class="recommendation__cards">
           <a href="#" class="card">
             <div class="card__block-image">
               <img src="./img/cards/1.jpg" alt="image: card" class="card__image">
-              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to Cart</div>
+              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to
+                Cart</div>
             </div>
             <div class="card__info">
               <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
@@ -172,7 +205,8 @@
           <a href="#" class="card">
             <div class="card__block-image">
               <img src="./img/cards/2.jpg" alt="image: card" class="card__image">
-              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to Cart</div>
+              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to
+                Cart</div>
             </div>
             <div class="card__info">
               <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
@@ -185,7 +219,8 @@
           <a href="#" class="card">
             <div class="card__block-image">
               <img src="./img/cards/3.jpg" alt="image: card" class="card__image">
-              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to Cart</div>
+              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to
+                Cart</div>
             </div>
             <div class="card__info">
               <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
@@ -198,7 +233,8 @@
           <a href="#" class="card">
             <div class="card__block-image">
               <img src="./img/cards/4.jpg" alt="image: card" class="card__image">
-              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to Cart</div>
+              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to
+                Cart</div>
             </div>
             <div class="card__info">
               <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
@@ -211,7 +247,8 @@
           <a href="#" class="card">
             <div class="card__block-image">
               <img src="./img/cards/5.jpg" alt="image: card" class="card__image">
-              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to Cart</div>
+              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to
+                Cart</div>
             </div>
             <div class="card__info">
               <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
@@ -224,7 +261,8 @@
           <a href="#" class="card">
             <div class="card__block-image">
               <img src="./img/cards/6.jpg" alt="image: card" class="card__image">
-              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to Cart</div>
+              <div class="card__button"><img src="./img/registration/basket.svg" alt="basket">Add to
+                Cart</div>
             </div>
             <div class="card__info">
               <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
@@ -235,15 +273,26 @@
             </div>
           </a>
         </div>
-        <a href="./catalog.html" class="button button__center">Browse All Product</a>
       </div>
     </div>
+    <nav class="catalog-nav">
+      <a href="#" class="catalog-nav__link-arrow-left"></a>
+      <a href="#" class="catalog-nav__link">1</a>
+      <a href="#" class="catalog-nav__link">2</a>
+      <a href="#" class="catalog-nav__link">3</a>
+      <a href="#" class="catalog-nav__link">4</a>
+      <a href="#" class="catalog-nav__link">5</a>
+      <a href="#" class="catalog-nav__link">6</a>
+      <a href="#" class="catalog-nav__link">...</a>
+      <a href="#" class="catalog-nav__link">20</a>
+      <a href="#" class="catalog-nav__link-arrow-right"></a>
+    </nav>
   </section>
 
   <section class="advantage">
     <div class="container">
       <div class="advantage__wrapper">
-        <a href="./product.html" class="advantage__item">
+        <a href="#" class="advantage__item">
           <svg class="advantage__image" width="46" height="32" viewBox="0 0 46 32" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -254,7 +303,7 @@
           <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
             extensive models.</p>
         </a>
-        <a href="./product.html" class="advantage__item">
+        <a href="#" class="advantage__item">
           <svg class="advantage__image" width="40" height="40" viewBox="0 0 40 40" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -265,7 +314,7 @@
           <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
             extensive models.</p>
         </a>
-        <a href="./product.html" class="advantage__item">
+        <a href="#" class="advantage__item">
           <svg class="advantage__image" width="48" height="35" viewBox="0 0 48 35" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path

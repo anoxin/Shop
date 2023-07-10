@@ -1,0 +1,134 @@
+.registration {
+  padding: 64px 0 96px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    max-width: 652px;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+
+  &__text {
+    margin-bottom: 21px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+  }
+
+
+
+  &__list {
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -40px;
+      display: block;
+      width: 20px;
+      height: 16px;
+      background: url(../img/registration/checked.svg)center/cover no-repeat;
+    }
+  }
+}
+
+
+.reg-form {
+  max-width: 360px;
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+
+  &__input {
+    width: 360px;
+    height: 45px;
+    padding: 0 16px;
+    margin-top: 20px;
+    border: 1px solid #A4A4A4;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+  }
+
+  &__choise {
+    margin: 31px 0 33px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio {
+    margin-right: 10px;
+
+    &-label {
+      margin-right: 20px;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      color: #000000;
+    }
+  }
+
+  &__text {
+    margin-top: 15px;
+    margin-bottom: 39px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    padding: 16px 29px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: $color-pink;
+    border: 1px solid $color-pink;
+
+    &:hover {
+      background: #FFFFFF;
+      color: $color-pink;
+
+      .fa-arrow-right-long {
+        color: $color-pink !important;
+
+      }
+
+    }
+  }
+}
+
+.fa-arrow-right-long {
+  margin-left: 22px;
+  color: #ffffff !important;
+
+}
