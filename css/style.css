@@ -678,6 +678,7 @@ body {
   color: #FFFFFF;
   background: #F16D7F;
   border: 1px solid #F16D7F;
+  transition: 0.3s;
 }
 .reg-form__button:hover {
   background: #FFFFFF;
@@ -792,13 +793,22 @@ body {
   color: #EF5B70;
 }
 .collection__choose {
+  position: absolute;
+  left: 0;
+  right: 0;
   display: flex;
+  justify-content: center;
   margin-bottom: 48px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
   text-transform: uppercase;
+}
+.collection__choose-block {
+  position: relative;
+  width: 100%;
+  min-height: 80px;
 }
 .collection__hr {
   width: 635px;
@@ -810,10 +820,21 @@ body {
   margin-right: 23px;
 }
 .collection__color {
+  height: min-content;
   margin-right: 22px;
+  padding: 5px;
+  background: white;
 }
 .collection__size {
+  height: min-content;
   margin-right: 22px;
+  padding: 5px;
+  background: white;
+}
+.collection__quantity {
+  height: min-content;
+  padding: 5px;
+  background: white;
 }
 .collection__cart {
   display: flex;
@@ -824,6 +845,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
+  transition: 0.3s;
 }
 .collection__cart:hover {
   background: #F16D7F;
@@ -1621,6 +1643,12 @@ body {
   }
   .collection__hr {
     width: 50%;
+  }
+  .collection__color {
+    margin-right: 0;
+  }
+  .collection__size {
+    margin-right: 0;
   }
   .slider__item {
     display: flex;

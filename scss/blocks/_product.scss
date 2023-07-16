@@ -115,13 +115,23 @@
   }
 
   &__choose {
+    position: absolute;
+    left: 0;
+    right: 0;
     display: flex;
+    justify-content: center;
     margin-bottom: 48px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
     text-transform: uppercase;
+
+    &-block {
+      position: relative;
+      width: 100%;
+      min-height: 80px;
+    }
   }
 
   &__hr {
@@ -137,11 +147,24 @@
   }
 
   &__color {
+    height: min-content;
     margin-right: 22px;
+    padding: 5px;
+    background: white;
   }
 
   &__size {
+    height: min-content;
     margin-right: 22px;
+    padding: 5px;
+    background: white;
+  }
+
+  &__quantity {
+    height: min-content;
+    padding: 5px;
+    background: white;
+
   }
 
 
@@ -154,6 +177,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    transition: 0.3s;
 
     &:hover {
       background: $color-pink;
